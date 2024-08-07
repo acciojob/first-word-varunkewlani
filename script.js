@@ -1,5 +1,5 @@
 function firstWord(s) {
-	s=s.trim()
+	/*s=s.trim()
 	let a=''   
 	for(let i=0;i<s.length;i++)
 		{
@@ -8,7 +8,12 @@ function firstWord(s) {
 			else
 				a+=s[i];
 		}
-	return a
+	return a */
+	s=s.trim()
+	let a=s.indexOf(' ')
+	if(a==-1)
+		return s
+	return s.substring(0,a)
   // your code here
 }
 
